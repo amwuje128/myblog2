@@ -1,0 +1,313 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>HDM's Blog</title><meta name="author" content="HDM"><meta name="copyright" content="HDM"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="HDM&#39;s Blog">
+<meta property="og:url" content="https://hdmblog.netlify.app/index.html">
+<meta property="og:site_name" content="HDM&#39;s Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://hdmblog.netlify.app/imges/head.webp">
+<meta property="article:author" content="HDM">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hdmblog.netlify.app/imges/head.webp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://hdmblog.netlify.app/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HDM\'s Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-07-04 00:06:23'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="//at.alicdn.com/t/c/font_4174859_bmvo39cpn7.css"><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/rdmbkg.css"><span id="fps"></span><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/imges/head.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E6%B3%95%E5%BE%8B/"><i class="fa-fw fas fa-balance-scale"></i><span> 法律</span></a></li><li><a class="site-page child" href="/categories/YJK/"><i class="fa-fw fas fa-book-bookmark"></i><span> YJK</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background: #1a6840"><nav id="nav"><span id="blog-info"><a href="/" title="HDM's Blog"><span class="site-name">HDM's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E6%B3%95%E5%BE%8B/"><i class="fa-fw fas fa-balance-scale"></i><span> 法律</span></a></li><li><a class="site-page child" href="/categories/YJK/"><i class="fa-fw fas fa-book-bookmark"></i><span> YJK</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">HDM's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="mailto:amwuje@126.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2023/08/29/%E9%98%BB%E5%B0%BC%E6%AF%94/" title="阻尼比"><img class="post-bg" src="https://s2.loli.net/2023/10/19/zlUTBWef4h1bENu.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阻尼比"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/08/29/%E9%98%BB%E5%B0%BC%E6%AF%94/" title="阻尼比">阻尼比</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-29T09:17:00.000Z" title="发表于 2023-08-29 17:17:00">2023-08-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BB%93%E6%9E%84/">结构</a></span></div><div class="content">阻尼比依据：
+《抗规》（《建筑抗震设计规范》GB50011-2010）
+《砼规》（《混凝土结构设计规范》GB50010-2010）
+《高规》（《高层建筑混凝土结构技术规程》JGJ3-2010）
+ 《高钢规》（《高层民用建筑钢结构技术规程》JGJ 99-2015）
+《组合规》（《组合结构设计规范》 JGJ 138-2016）
+《门规》（《门式刚架轻型房屋钢结构技术规范》 GB 51022-2015）
+一、一般混凝土结构《抗规》5.1.5、《高规》4.3.8    除有专门规定外，混凝土结构的阻尼比应取0.05。
+《高规》3.7.6   风振舒适度计算时，混凝土结构阻尼比宜取0.02，混合结构宜取0.01~0.02。
+二、多层和高层钢结构房屋《抗规》8.2.2 、《高钢规》5.4.6  钢结构抗震计算的阻尼比宜符合下列规定：
+
+1  多遇地震下的计算，高度不大于50m时可取0.04；高度大于50m且小于200m时，可取0.03；高度不小于200m时，宜取0.02。
+
+2  当偏心支撑框架部分承担的地震倾覆力矩大于结构总地震倾覆力矩的50％时，其阻尼比可比本条1款相应增加0.005。
+
+3  ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/08/27/YJK-%E6%A5%BC%E6%9D%BF%E8%88%92%E9%80%82%E5%BA%A6/" title="YJK 楼板舒适度"><img class="post-bg" src="https://s2.loli.net/2023/10/19/zlUTBWef4h1bENu.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="YJK 楼板舒适度"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/08/27/YJK-%E6%A5%BC%E6%9D%BF%E8%88%92%E9%80%82%E5%BA%A6/" title="YJK 楼板舒适度">YJK 楼板舒适度</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-27T08:41:00.000Z" title="发表于 2023-08-27 16:41:00">2023-08-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/YJK/">YJK</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/YJK/%E8%88%92%E9%80%82%E5%BA%A6/">舒适度</a></span></div><div class="content">YJK 楼板舒适度本文根据盈建科楼板舒适度分析设计软件LBSSD-总.pptx整理
+盈建科楼板舒适度分析设计软件LBSSD-总.pptx下载密码:ect5
+一、楼板舒适度分析必要性2022年1月1日开始执行的《通用规范》对于结构楼板舒适度验算提出了要求，楼板舒适度验算被纳入强制性条文，楼板舒适度验算成为几乎所有建筑工程结构设计时都需要验算的指标。
+
+《工程结构通用规范》3.1.2
+3.1.2  涉及结构或结构单元的正常使用功能、人员舒适性、建筑外观的极限状态应作为正常使用极限状态。当结构或结构构件出现下列状态之一时，应认为超过了正常使用极限状态；
+1 影响外观、使用舒适性或结构使用功能的变形；
+2 造成人员不舒适或结构使用功能受限的振动；
+3 影响外观、耐久性或结构使用功能的局部损坏；
+
+
+
+
+《混凝土结构通用规范》4.2.3
+4.2.3 房屋建筑的混凝土楼盖应满足楼盖竖向振动舒适度要求；混凝土结构高层建筑应满足10年重现期水平风荷载作用的振动舒适度要求。
+
+
+《钢结构通用规范》2.0.7
+2.0.7 建筑钢结构支承动力设备或精密仪器时，结构设计除应满足承载力、变形及抗震性能要求外、结 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/08/27/YJK-%E6%A5%BC%E6%9D%BF%E5%BA%94%E5%8A%9B%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/" title="YJK 楼板应力分析"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="YJK 楼板应力分析"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/08/27/YJK-%E6%A5%BC%E6%9D%BF%E5%BA%94%E5%8A%9B%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/" title="YJK 楼板应力分析">YJK 楼板应力分析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-27T06:35:00.000Z" title="发表于 2023-08-27 14:35:00">2023-08-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/YJK/">YJK</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/YJK/%E5%BA%94%E5%8A%9B%E5%88%86%E6%9E%90/">应力分析</a></span></div><div class="content">YJK 楼板应力分析一、中震下楼板应力分析
+中震下楼板应力分析要点：
+1、定义弹性膜或弹性板6，且不要勾选强制刚性楼板假定，具体定义哪种看用户是否想利用板面外刚度；
+2、定义地震影响系数最大值为中震下的系数；
+3、本层信息中定义楼板主筋等级；
+4、勾选梁与弹性板变形协调，让梁与板的有限元节点变形协调，默认已经勾选；
+5、勾选等值线查看。计算完成之后在计算结果菜单下的等值线中查看相应计算结果。
+
+
+
+二、温度荷载下楼板应力分析
+温度荷载下楼板应力分析要点：
+1、定义弹性膜或弹性板6，且参数设置不要勾选强制刚性楼板假定；
+2、定义温度荷载，升温为正，降温为负；
+3、勾选梁与弹性板变形协调，让梁与板的有限元节点变形协调，默认已经勾选；
+4、勾选等值线查看；
+5、本层信息中定义楼板主筋等级。计算完成之后在计算结果菜单下的等值线中查看计算结果。
+
+
+
+三、横活荷载下楼板应力分析
+横活荷载下楼板应力分析要点：
+1、定义弹性板6，且参数设置不要勾选强制刚性楼板假定（此时楼板必须有面外刚度才能承担面外荷载）；
+2、定义板面横活荷载；
+3、勾选梁与弹性板变形协调，让梁与板的有限元节点变形协调，默认已经勾 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/07/28/bing%E5%A3%81%E7%BA%B8/" title="bing壁纸"><img class="post-bg" src="https://s2.loli.net/2024/03/29/Asymvo9N8cZMzbE.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="bing壁纸"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/07/28/bing%E5%A3%81%E7%BA%B8/" title="bing壁纸">bing壁纸</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-28T08:11:19.000Z" title="发表于 2023-07-28 16:11:19">2023-07-28</time></span></div><div class="content">
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/07/27/%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95-2012-12-28/" title="中华人民共和国劳动合同法"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="中华人民共和国劳动合同法"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/07/27/%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95-2012-12-28/" title="中华人民共和国劳动合同法">中华人民共和国劳动合同法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-27T03:09:32.000Z" title="发表于 2023-07-27 11:09:32">2023-07-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B3%95%E5%BE%8B/">法律</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%B3%95%E5%BE%8B/%E7%A4%BE%E4%BC%9A%E6%B3%95/">社会法</a></span></div><div class="content">中华人民共和国劳动合同法2007年6月29日 第十届全国人民代表大会常务委员会第二十八次会议通过
+2012年12月28日 第十一届全国人民代表大会常务委员会第三十次会议《关于修改&lt;中华人民共和国劳动合同法&gt;的决定》修正
+
+
+第一章 总则第一条 为了完善劳动合同制度，明确劳动合同双方当事人的权利和义务，保护劳动者的合法权益，构建和发展和谐稳定的劳动关系，制定本法。
+第二条 中华人民共和国境内的企业、个体经济组织、民办非企业单位等组织（以下称用人单位）与劳动者建立劳动关系，订立、履行、变更、解除或者终止劳动合同，适用本法。
+国家机关、事业单位、社会团体和与其建立劳动关系的劳动者，订立、履行、变更、解除或者终止劳动合同，依照本法执行。
+第三条 订立劳动合同，应当遵循合法、公平、平等自愿、协商一致、诚实信用的原则。
+依法订立的劳动合同具有约束力，用人单位与劳动者应当履行劳动合同约定的义务。
+第四条 用人单位应当依法建立和完善劳动规章制度，保障劳动者享有劳动权利、履行劳动义务。
+用人单位在制定、修改或者决定有关劳动报酬、工作时间、休息休假、劳动安全卫生、保险福利、职工培训、劳动纪律以 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/07/27/%E5%8A%B3%E5%8A%A8%E6%B3%95-2018-12-29/" title="中华人民共和国劳动法"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="中华人民共和国劳动法"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/07/27/%E5%8A%B3%E5%8A%A8%E6%B3%95-2018-12-29/" title="中华人民共和国劳动法">中华人民共和国劳动法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-27T02:29:32.000Z" title="发表于 2023-07-27 10:29:32">2023-07-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B3%95%E5%BE%8B/">法律</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%B3%95%E5%BE%8B/%E7%A4%BE%E4%BC%9A%E6%B3%95/">社会法</a></span></div><div class="content">中华人民共和国劳动法1994年7月5日 第八届全国人民代表大会常务委员会第八次会议通过
+2009年8月27日 第十一届全国人民代表大会常务委员会第十次会议《关于修改部分法律的决定》第一次修正
+2018年12月29日 第十三届全国人民代表大会常务委员会第七次会议《关于修改〈中华人民共和国劳动法〉等七部法律的决定》第二次修正
+
+
+第一章 总则第一条 为了保护劳动者的合法权益，调整劳动关系，建立和维护适应社会主义市场经济的劳动制度，促进经济发展和社会进步，根据宪法，制定本法。
+第二条 在中华人民共和国境内的企业、个体经济组织（以下统称用人单位）和与之形成劳动关系的劳动者，适用本法。
+国家机关、事业组织、社会团体和与之建立劳动合同关系的劳动者，依照本法执行。
+第三条 劳动者享有平等就业和选择职业的权利、取得劳动报酬的权利、休息休假的权利、获得劳动安全卫生保护的权利、接受职业技能培训的权利、享受社会保险和福利的权利、提请劳动争议处理的权利以及法律规定的其他劳动权利。
+劳动者应当完成劳动任务，提高职业技能，执行劳动安全卫生规程，遵守劳动纪律和职业道德。
+第四条 用人单位应当依法建立和完善规章制度， ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/imges/head.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">HDM</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:amwuje@126.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"></div><div id="welcome-info"></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/08/29/%E9%98%BB%E5%B0%BC%E6%AF%94/" title="阻尼比"><img src="https://s2.loli.net/2023/10/19/zlUTBWef4h1bENu.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阻尼比"/></a><div class="content"><a class="title" href="/2023/08/29/%E9%98%BB%E5%B0%BC%E6%AF%94/" title="阻尼比">阻尼比</a><time datetime="2023-08-29T09:17:00.000Z" title="发表于 2023-08-29 17:17:00">2023-08-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/08/27/YJK-%E6%A5%BC%E6%9D%BF%E8%88%92%E9%80%82%E5%BA%A6/" title="YJK 楼板舒适度"><img src="https://s2.loli.net/2023/10/19/zlUTBWef4h1bENu.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="YJK 楼板舒适度"/></a><div class="content"><a class="title" href="/2023/08/27/YJK-%E6%A5%BC%E6%9D%BF%E8%88%92%E9%80%82%E5%BA%A6/" title="YJK 楼板舒适度">YJK 楼板舒适度</a><time datetime="2023-08-27T08:41:00.000Z" title="发表于 2023-08-27 16:41:00">2023-08-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/08/27/YJK-%E6%A5%BC%E6%9D%BF%E5%BA%94%E5%8A%9B%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/" title="YJK 楼板应力分析"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="YJK 楼板应力分析"/></a><div class="content"><a class="title" href="/2023/08/27/YJK-%E6%A5%BC%E6%9D%BF%E5%BA%94%E5%8A%9B%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/" title="YJK 楼板应力分析">YJK 楼板应力分析</a><time datetime="2023-08-27T06:35:00.000Z" title="发表于 2023-08-27 14:35:00">2023-08-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/07/28/bing%E5%A3%81%E7%BA%B8/" title="bing壁纸"><img src="https://s2.loli.net/2024/03/29/Asymvo9N8cZMzbE.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="bing壁纸"/></a><div class="content"><a class="title" href="/2023/07/28/bing%E5%A3%81%E7%BA%B8/" title="bing壁纸">bing壁纸</a><time datetime="2023-07-28T08:11:19.000Z" title="发表于 2023-07-28 16:11:19">2023-07-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/07/27/%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95-2012-12-28/" title="中华人民共和国劳动合同法"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="中华人民共和国劳动合同法"/></a><div class="content"><a class="title" href="/2023/07/27/%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95-2012-12-28/" title="中华人民共和国劳动合同法">中华人民共和国劳动合同法</a><time datetime="2023-07-27T03:09:32.000Z" title="发表于 2023-07-27 11:09:32">2023-07-27</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/YJK/"><span class="card-category-list-name">YJK</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/YJK/%E5%BA%94%E5%8A%9B%E5%88%86%E6%9E%90/"><span class="card-category-list-name">应力分析</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/YJK/%E8%88%92%E9%80%82%E5%BA%A6/"><span class="card-category-list-name">舒适度</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%B3%95%E5%BE%8B/"><span class="card-category-list-name">法律</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%B3%95%E5%BE%8B/%E7%A4%BE%E4%BC%9A%E6%B3%95/"><span class="card-category-list-name">社会法</span><span class="card-category-list-count">2</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%BB%93%E6%9E%84/"><span class="card-category-list-name">结构</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%A3%81%E7%BA%B8/" style="font-size: 1.15em; color: rgb(179, 51, 169)">壁纸</a><a href="/tags/Bing%E5%A3%81%E7%BA%B8/" style="font-size: 1.15em; color: rgb(19, 127, 12)">Bing壁纸</a><a href="/tags/YJK/" style="font-size: 1.45em; color: rgb(17, 85, 8)">YJK</a><a href="/tags/%E5%BA%94%E5%8A%9B%E5%88%86%E6%9E%90/" style="font-size: 1.15em; color: rgb(126, 163, 36)">应力分析</a><a href="/tags/%E5%9C%B0%E9%9C%87/" style="font-size: 1.15em; color: rgb(72, 93, 152)">地震</a><a href="/tags/%E6%B8%A9%E5%BA%A6/" style="font-size: 1.15em; color: rgb(111, 39, 111)">温度</a><a href="/tags/%E8%88%92%E9%80%82%E5%BA%A6/" style="font-size: 1.15em; color: rgb(5, 102, 105)">舒适度</a><a href="/tags/%E6%B3%95%E5%BE%8B/" style="font-size: 1.45em; color: rgb(90, 11, 78)">法律</a><a href="/tags/%E7%A4%BE%E4%BC%9A%E6%B3%95/" style="font-size: 1.45em; color: rgb(68, 137, 58)">社会法</a><a href="/tags/%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95/" style="font-size: 1.15em; color: rgb(56, 78, 128)">劳动合同法</a><a href="/tags/%E5%8A%B3%E5%8A%A8%E6%B3%95/" style="font-size: 1.15em; color: rgb(159, 166, 83)">劳动法</a><a href="/tags/%E9%98%BB%E5%B0%BC%E6%AF%94/" style="font-size: 1.15em; color: rgb(54, 19, 118)">阻尼比</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-07-03T16:06:23.764Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="ft"></div><div class="copyright">&copy;2023 - 2024 By HDM</div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.9.0"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://www.netlify.com/" style="margin-inline:5px" title="本站托管于Netlify"><img src="https://img.shields.io/badge/Hosted-Netlify-brightgreen?style=flat&amp;logo=Netlify" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src=" https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button type="button" title="切换背景" onclick="toggleWinbox()"><i class="fas fa-display"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js').then(() => {
+    jinrishici.load(result =>{
+      if (true) {
+        const sub = []
+        const content = result.data.content
+        sub.unshift(content)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = result.data.content
+      }
+    })
+  })
+}
+typedJSFn.run(subtitleType)
+</script></div><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script><script defer src="/js/runtime.js"></script><script async src="/js/fps.js"></script><script async data-pjax src="/js/txmap.js"></script><script src="/js/rdmbkg.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var qweather_key = '6cb92b38bc70438a8bac674f91803e04';
+  var gaud_map_key = '1e6bbfc7865c76de97607d44b895a73f';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '113.949918,22.506712';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><!-- hexo injector body_end end --></body></html>
